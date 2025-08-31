@@ -1,6 +1,8 @@
 <?php
 
+namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ChatController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/',[ChatController::class,'index'])->name('user.login');
+Route::post('/broadcast',[ChatController::class,'broadCastChat'])->name('broadCastChat.chat');
+Route::get('/chat',[ChatController::class,'notfoundChat']);
+Route::post('/chat',[ChatController::class,'chat'])->name('chat.message');
