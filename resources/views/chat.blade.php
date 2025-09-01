@@ -97,7 +97,7 @@
 <div class="container">
    <div class="card" style="width: 50rem; height: 30rem;">
       <div class="card-body">
-         <div class="card-header">Chat</div>
+         <div class="card-header">Static Chat app</div>
          <div class="card-body height3">
             <ul class="chat-list" id="chat-section">
                   <!-- <li class="out">
